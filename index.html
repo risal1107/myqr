@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="theme-color" content="#000000" />
   
-<title>QR CODE SCANNER</title>
+<title>MIKHMON QR CODE SCANNER</title>
   <style>
     body{
       background-color: #000000;
@@ -14,12 +14,6 @@
     video {
       width: 100%    !important;
       height: auto   !important;
-    }
-    #mikhmon, {
-      display: none !important;
-    }
-    center#powered {
-      display: none !important;
     }
     .btn{
       margin-top:5px;
@@ -53,7 +47,7 @@
       font-family: "fontello";
       font-style: normal;
       font-weight: normal;
-      /* speak: none; */
+      speak: none;
       display: inline-block;
       text-decoration: inherit;
       width: 1em;
@@ -68,28 +62,28 @@
     }
   </style>
 <script type="text/javascript" src="llqrcode.js"></script>
-<script type="text/javascript" src="webqr.js"></script>
+<script type="text/javascript" src="mikhmon_webqr.js?v1"></script>
 <script async src="https://arc.io/widget.min.js#rDZc6s4f"></script>  
 </head>
 <body>
   <center>
-    <div id="main" bis_skin_checked="1">
-      <div id="mainbody" style="display: inline;" bis_skin_checked="1">
-        <div class="camera" id="outdiv" bis_skin_checked="1"><video id="v" autoplay=""></video></div>
-        <div style="display: table;" bis_skin_checked="1">
-          <div style="display: table-row;" bis_skin_checked="1">
-            <div style="display: table-cell; padding:3px;" bis_skin_checked="1">
-              <div class="btn" id="reload" onclick="location.reload();" bis_skin_checked="1"><i class="icon icon-arrows-cw"></i> Reload Camera</div>
+    <div id="main">
+      <div id="mainbody">
+        <div class="camera" id="outdiv"></div>
+        <div style="display: table;">
+          <div style="display: table-row;">
+            <div style="display: table-cell; padding:3px;">
+              <div class="btn" id="reload" onclick="location.reload();"><i class="icon icon-arrows-cw">&#xe800;</i> Reload Camera</div>
             </div>
-            <div style="display: table-cell; padding:3px;" bis_skin_checked="1">
-              <!-- <div class="btn" onclick="document.location = 'googlechrome://navigate?url=https://risal1107.github.io/myqr/';"></div> -->
-              <a class="btn" href="intent://risal1107.github.io/myqr#Intent;scheme=http;package=com.android.chrome;end"><i class="icon icon-chrome-1"></i> Open in Chrome</a>
+            <div style="display: table-cell; padding:3px;">
+              <!-- <div class="btn" onclick="document.location = 'googlechrome://navigate?url=https://laksa19.github.io/myqr/';"></div> -->
+              <a class="btn" href="intent://laksa19.github.io/myqr#Intent;scheme=http;package=com.android.chrome;end"><i class="icon icon-chrome-1">&#xf268;</i> Open in Chrome</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div bis_skin_checked="1">QR CODE SCANNER <br>Powered by <a href="http://www.webqr.com">webqr.com</a></div>
+    <div>MIKHMON QR CODE SCANNER <br>Powered by <a href="http://www.webqr.com">webqr.com</a></div>
   </center>
 <canvas style="display:none;" id="qr-canvas" width="800" height="600"></canvas>
 <script type="text/javascript">load();</script>
